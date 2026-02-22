@@ -1,0 +1,232 @@
+:root {
+  --bg: #090f1f;
+  --surface: #121a2f;
+  --card: #1a2545;
+  --text: #edf0ff;
+  --muted: #b8c1e3;
+  --accent: #53f0d2;
+  --accent-dark: #26c2a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #151f3e 0%, var(--bg) 45%);
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+}
+
+.hero {
+  padding: 2rem 1.2rem 4rem;
+}
+
+.nav,
+.section,
+footer {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.9rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--accent);
+}
+
+.hero-content h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  max-width: 900px;
+  margin: 0;
+}
+
+.hero-content h2 span {
+  color: var(--accent);
+}
+
+.tag {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #06201b;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--accent-dark);
+}
+
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+main {
+  padding: 0 1.2rem 2rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(83, 240, 210, 0.2);
+}
+
+.surface {
+  background: rgba(18, 26, 47, 0.85);
+  border-radius: 20px;
+  padding: 1.2rem;
+}
+
+.metrics {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.metric {
+  background: var(--card);
+  border-radius: 14px;
+  text-align: center;
+  padding: 1rem 0.8rem;
+}
+
+.value {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.donate p {
+  color: var(--muted);
+}
+
+.donation-form {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.donation-form input {
+  background: var(--card);
+  border: 1px solid #334574;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.7rem;
+  min-width: 180px;
+}
+
+.allocation {
+  margin-top: 1rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
