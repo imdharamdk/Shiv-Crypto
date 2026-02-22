@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiv Crypto | Nature & Yoga on Blockchain</title>
+    <meta
+      name="description"
+      content="Shiv Crypto is a decentralized platform integrating IAE and DEO to fund Nature conservation and Yoga knowledge sharing through transparent blockchain governance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="hero">
+      <nav class="nav" aria-label="Main navigation">
+        <h1 class="logo">Shiv Crypto</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#knowledge">Knowledge Hub</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="whitepaper.md" target="_blank" rel="noopener">Whitepaper</a></li>
+          <li><a href="roadmap.md" target="_blank" rel="noopener">Roadmap</a></li>
+        </ul>
+        <a class="button button-outline" href="#donate">Support Mission</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="tag">Web3 for Conscious Living</p>
+        <h2>
+          A decentralized platform merging <span>IAE</span> + <span>DEO</span> to
+          protect nature and spread yoga wisdom.
+        </h2>
+        <p class="about">
+          Shiv Crypto is a decentralized blockchain platform integrating IAE
+          (Information-Action-Existence) and DEO (Dynamic Existence
+          Optimization) theories, dedicated to promoting Nature conservation and
+          Yoga through transparent donations and knowledge sharing.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#about">Explore Ecosystem</a>
+          <a class="button button-outline" href="#knowledge">Open Yoga Hub</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <h3 id="about-heading">Why Shiv Crypto?</h3>
+        <div class="cards three-col">
+          <article class="card">
+            <h4>IAE Framework</h4>
+            <p>
+              Convert reliable information into verifiable action and meaningful
+              existence through smart contracts and on-chain governance.
+            </p>
+          </article>
+          <article class="card">
+            <h4>DEO Optimization</h4>
+            <p>
+              Allocate treasury resources dynamically toward projects with the
+              highest measurable ecological and social impact.
+            </p>
+          </article>
+          <article class="card">
+            <h4>Transparent Impact</h4>
+            <p>
+              Every donation and grant is visible on-chain, ensuring trust,
+              accountability, and global participation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="section surface" aria-labelledby="tokenomics-heading">
+        <h3 id="tokenomics-heading">SHIV Token Snapshot</h3>
+        <div class="metrics">
+          <div class="metric">
+            <p class="value">1B</p>
+            <p class="label">Total Supply</p>
+          </div>
+          <div class="metric">
+            <p class="value">40%</p>
+            <p class="label">Nature Conservation DAO</p>
+          </div>
+          <div class="metric">
+            <p class="value">25%</p>
+            <p class="label">Yoga Education Grants</p>
+          </div>
+          <div class="metric">
+            <p class="value">15%</p>
+            <p class="label">Community Rewards</p>
+          </div>
+          <div class="metric">
+            <p class="value">20%</p>
+            <p class="label">Liquidity + Development</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="knowledge" class="section" aria-labelledby="knowledge-heading">
+        <h3 id="knowledge-heading">Yoga Knowledge Hub</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Daily Practice Trackers</h4>
+            <p>
+              Publish your yoga milestones on-chain and earn SHIV badges for
+              consistency and mindful contribution.
+            </p>
+          </article>
+          <article class="card">
+            <h4>Teacher-Led Sessions</h4>
+            <p>
+              Access decentralized content from verified instructors and support
+              them directly through tokenized tipping.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="docs" class="section" aria-labelledby="docs-heading">
+        <h3 id="docs-heading">Core Documents</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Shiv Crypto Whitepaper</h4>
+            <p>
+              Read the full technical, governance, tokenomics, and impact model.
+            </p>
+            <a class="button" href="whitepaper.md" target="_blank" rel="noopener">Read Whitepaper</a>
+          </article>
+          <article class="card">
+            <h4>Execution Roadmap</h4>
+            <p>
+              Review phased milestones from foundation to full decentralized
+              governance maturity.
+            </p>
+            <a class="button" href="roadmap.md" target="_blank" rel="noopener">Read Roadmap</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="donate" class="section donate" aria-labelledby="donate-heading">
+        <h3 id="donate-heading">Transparent Donation Estimator</h3>
+        <p>
+          Simulate how your contribution can be allocated across conservation,
+          yoga outreach, and protocol operations.
+        </p>
+
+        <form id="donation-form" class="donation-form">
+          <label for="amount">Donation Amount (USDT)</label>
+          <input id="amount" type="number" min="1" step="1" required />
+          <button class="button" type="submit">Calculate Allocation</button>
+        </form>
+
+        <div id="allocation" class="allocation hidden" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Shiv Crypto | Empowering Nature, Yoga, and Conscious Blockchain.</p>
+      <p>
+        Deploy-ready for Netlify static hosting. Add this repository and publish
+        from root.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
